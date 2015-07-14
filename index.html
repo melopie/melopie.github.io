@@ -12,13 +12,34 @@
     <link rel="import" href="game.html">
   </head>
   <body>
-    <section class="page-header">
-      <h1 class="project-name">Pictophone</h1>
-      <h2 class="project-tagline"></h2>
-      <a href="https://github.com/melopie/pictophone" class="btn">View on GitHub</a>
-      <a href="https://github.com/melopie/pictophone/zipball/master" class="btn">Download .zip</a>
-      <a href="https://github.com/melopie/pictophone/tarball/master" class="btn">Download .tar.gz</a>
-    </section>
+    <div data-role="page" class="page" id="pageone">
+      <section class="page-header">
+        <h1 class="project-name">Pictophone</h1>
+        <h2 class="project-tagline"></h2>
+        <a href="https://github.com/melopie/pictophone" class="btn">View on GitHub</a>
+        <a href="https://github.com/melopie/pictophone/zipball/master" class="btn">Download .zip</a>
+        <a href="https://github.com/melopie/pictophone/tarball/master" class="btn">Download .tar.gz</a>
+        <a href="#pagetwo" data-transition="fade"> Input Names </a>
+      </section>
+    </div><!-- /page one -->
+    
+    <!-- Start of page two -->
+    
+    <div data-role="page" class="page" id="pagetwo">
+
+  	<div data-role="header" id="header1">
+  		<h1>About Me</h1>
+  	</div><!-- /header -->
+  
+  	<div data-role="content">
+  		<!--content here-->
+  		<p>Go back to the <a href="#pageone">homepage</a>.</p>		
+  	</div><!-- /content -->
+  
+  	<div data-role="footer" id="footer">
+  		<h4>Footer</h4>
+  	</div><!-- /footer -->
+  </div><!-- /page two -->
 
     <section class="main-content">
       <!--main content here-->
