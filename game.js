@@ -95,36 +95,17 @@ clearBtn.addEventListener("click", function (evt) {
     context.fillStyle = "#FCF0AD";
     context.fillRect(0, 0, canvas.width, canvas.height);
 });
-var imagePull = function () {
-    for (var i = 0; i < numPlayers; i++) {
-        roundNum = roundNum[i].value; //get player name
-        turnVal = canvas.toDataURL("image/jpeg");
-        dict[roundNum] = turnVal; //add player and turn number to dictionary
-        
-
-    }
-    //end of for loop
-
-}; //end of function imagePull
 
 // when the save button is clicked
 var saveBtn = document.getElementById("save");
 
 //send function
 var sendBtn = function () {
-    if (turn === 0) {
-        turn++;
-        dict.push({
-            player: canvas.toDataURL("image/jpeg");
-        });
-        // replace screen with pushed image, and add textbox
-
-        //next player would see text box and an empty post-it
-    } else {
-        turn = 0 + numPlayers;
-        //only works for first player
-        //must change to dict[player, numofPlayer]
-    }
+    for (var i = 0; i < numPlayers; i++) {
+        roundNum = roundNum[i].value; //get player name
+        turnVal = canvas.toDataURL("image/jpeg");
+        dict[roundNum] = turnVal; //add player and turn number to dictionary
+        
 
 };
 
