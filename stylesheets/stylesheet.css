@@ -1,10 +1,10 @@
 body {
-				background: Azure;
+	background: Azure;
 }
 .part {
 	background-color: #FF715B;
-  border-radius: 20px;
-  width: 160px;
+	border-radius: 20px;
+	width: 160px;
 	text-align: center;
 	padding-top: 10px;
 	padding-bottom: 10px;
@@ -20,5 +20,5 @@ body {
 }
 .fname1 {
 	background-color: #30C5FF;
-  border-radius: 5px;
+	border-radius: 5px;
 }
