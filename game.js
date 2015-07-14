@@ -49,7 +49,7 @@ canvas.addEventListener("mousedown", function (evt) {
 });
 
 // when the user lifts their mouse up anywhere on the screen.
-window.addEventListener("mouseup", function (evt) {
+window.addEventListener("mouseup", function (evt)) {
     isMouseDown = false;
 });
 
@@ -76,14 +76,14 @@ for (var i = 0; i < swatches.length; i++) {
     }
 
     // when we click on a swatch...
-    swatch.addEventListener("click", function (evt) {
+    swatch.addEventListener("click", function (evt)) {
 
         this.className = "active"; // give the swatch a class of "active", which will trigger the CSS border.
         currentSwatch.className = ""; // remove the "active" class from the previously selected swatch
         currentSwatch = this; // set this to the current swatch so next time we'll take "active" off of this.
 
         context.strokeStyle = this.style.backgroundColor; // set the background color for the canvas.
-    });
+    };
 }
 
 // when the clear button is clicked
@@ -168,7 +168,7 @@ canvas2.addEventListener("mousedown", function (evt) {
 });
 
 // when the user lifts their mouse up anywhere on the screen.
-window.addEventListener("mouseup", function (evt) {
+window.addEventListener("mouseup", function (evt)) {
     isMouseDown2 = false;
 });
 
@@ -195,14 +195,14 @@ for (var j = 0; j < swatches.length; j++) {
     }
 
     // when we click on a swatch...
-    swatch2.addEventListener("click", function (evt) {
+    swatch2.addEventListener("click", function (evt)) {
 
         this.className = "active"; // give the swatch a class of "active", which will trigger the CSS border.
         currentSwatch2.className = ""; // remove the "active" class from the previously selected swatch
         currentSwatch2 = this; // set this to the current swatch so next time we'll take "active" off of this.
 
         context2.strokeStyle = this.style.backgroundColor; // set the background color for the canvas.
-    });
+    };
 }
 
 // when the clear button is clicked
