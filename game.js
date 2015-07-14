@@ -9,7 +9,7 @@ var mouseY = 0;
 var dict = {};
 var datadict = {};
 var turnVal;
-
+var twiceNum;
 //name input
 function showInput() {
     console.log("Inside showInput function");
@@ -101,11 +101,20 @@ var saveBtn = document.getElementById("save");
 
 //send function
 var sendBtn = function () {
+    //image pull
     for (var i = 0; i < numPlayers; i++) {
         roundNum = roundNum[i].value; //get player name
         turnVal = canvas.toDataURL("image/jpeg");
         dict[roundNum] = turnVal; //add player and turn number to dictionary
-        
+    }//end of for loop
+    twiceNum = 2 * numPlayers;
+    //text pull
+    for (var k = 0; k < twiceNum; k++) {
+        roundNum = roundNum[k].value; 
+        println(roundNum);
+    }//end of for loop
+    
+
 
 };
 
