@@ -139,7 +139,12 @@ saveBtn.addEventListener("click", function (evt) {
     // window.open(dataUri,"_blank");
 });
 
+sendBtn.addEventListener("click", function (evt) {
+    // we'll save using the new HTML5 download attribute to save the image. 
+    // we'll give the image a name of draw-[timestamp].jpg
 
+    sendBtn();
+});
 
 // SECOND DRAWING PAD
 var canvas2 = document.getElementById("drawingPad2");
