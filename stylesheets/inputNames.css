@@ -1,8 +1,10 @@
 h1 {
     font-family: "Amatic SC";
+    text-align: center;
 }
 body{
     font-family: 'Raleway', sans-serif;
+    text-align: center;
 }
 .center {
     margin: auto;
