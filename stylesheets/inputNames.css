@@ -14,7 +14,7 @@ body{
 .part {
     background-color: #FF715B;
     border-radius: 20px;
-    width: 160px;
+    /*width: 160px;*/
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
