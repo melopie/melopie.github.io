@@ -1,5 +1,9 @@
 body {
+	font-family: "Andika";
 	background-color: Azure;
+}
+
+h1 {
 	font-family: "Amatic SC" ;
 }
 .part {
