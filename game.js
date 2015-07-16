@@ -11,7 +11,7 @@ var datadict = {};
 var turnVal;
 var twiceNum;
 //name input
-function showInput() {
+var showInput = function()  {
     console.log("Inside showInput function");
     numPlayers = document.getElementById("numPlayersID").value;
     console.log("Number of players: " + numPlayers);
@@ -30,7 +30,7 @@ function showInput() {
     }
     console.log(dict);
 
-}
+};
 context.strokeStyle = "#000000"; // drawing black lines.
 
 // make sure the canvas' background is actually white for saving.
@@ -49,7 +49,7 @@ canvas.addEventListener("mousedown", function (evt) {
 });
 
 // when the user lifts their mouse up anywhere on the screen.
-window.addEventListener("mouseup", function (evt)) {
+window.addEventListener("mouseup", function (evt) {
     isMouseDown = false;
 });
 
@@ -83,7 +83,7 @@ for (var i = 0; i < swatches.length; i++) {
         currentSwatch = this; // set this to the current swatch so next time we'll take "active" off of this.
 
         context.strokeStyle = this.style.backgroundColor; // set the background color for the canvas.
-    };
+    }
 }
 
 // when the clear button is clicked
@@ -170,7 +170,7 @@ canvas2.addEventListener("mousedown", function (evt) {
 });
 
 // when the user lifts their mouse up anywhere on the screen.
-window.addEventListener("mouseup", function (evt)) {
+window.addEventListener("mouseup", function (evt) {
     isMouseDown2 = false;
 });
 
