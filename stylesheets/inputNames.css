@@ -1,3 +1,9 @@
+h1 {
+    font-family: "Amatic SC";
+}
+body{
+    font-family: "Andika";
+}
 .part {
     background-color: #FF715B;
     border-radius: 20px;
