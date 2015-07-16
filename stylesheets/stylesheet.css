@@ -1,5 +1,6 @@
 body {
-	background: Azure;
+	background-color: Azure;
+	font-family: "Amatic SC" ;
 }
 .part {
 	background-color: #FF715B;
