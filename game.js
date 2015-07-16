@@ -101,29 +101,6 @@ clearBtn.addEventListener("click", function (evt) {
 
 // when the save button is clicked
 var saveBtn = document.getElementById("save");
-
-//send function
-var sendBtn = function () {
-    //image pull
-    for (var i = 0; i < numPlayers; i++) {
-        roundNum = roundNum[i].value; //get player name
-        console.log(i);
-        turnVal = canvas.toDataURL("image/jpeg");
-        dict[roundNum] = turnVal; //add player and turn number to dictionary
-        var turnPic = document.createElement("turnPic");
-        document.body.appendChild(turnPic);
-    }//end of for loop
-    twiceNum = 2 * numPlayers;
-    //text pull
-    for (var k = 0; k < twiceNum; k++) {
-        roundNum = roundNum[k].value; 
-        println(roundNum);
-    }//end of for loop
-    
-
-
-};
-
 saveBtn.addEventListener("click", function (evt) {
     // we'll save using the new HTML5 download attribute to save the image. 
     // we'll give the image a name of draw-[timestamp].jpg
@@ -139,12 +116,26 @@ saveBtn.addEventListener("click", function (evt) {
     // window.open(dataUri,"_blank");
 });
 
+//send function
+var sendBtn = document.getElementById("send");
 sendBtn.addEventListener("click", function (evt) {
-    // we'll save using the new HTML5 download attribute to save the image. 
-    // we'll give the image a name of draw-[timestamp].jpg
-    console.log("send button pressed");
-    sendBtn();
+	for (var i = 0; i < numPlayers; i++) {
+        roundNum = roundNum[i].value; //get player name
+        turnVal = canvas.toDataURL("image/jpeg");
+        dict[roundNum] = turnVal; //add player and turn number to dictionary
+        var turnPic = document.createElement("turnPic");
+        console.log("sent");
+        document.body.appendChild(turnPic);
+    }//end of for loop
+    twiceNum = 2 * numPlayers;
+    //text pull
+    for (var k = 0; k < twiceNum; k++) {
+        roundNum = roundNum[k].value; 
+        println(roundNum);
+    }//end of for loop
+    //console.log("sent");
 });
+
 
 // SECOND DRAWING PAD
 var canvas2 = document.getElementById("drawingPad2");
@@ -260,3 +251,4 @@ saveBtn2.addEventListener("click", function (evt) {
     // in older browsers you may need to substitute those last two lines of code with this:
     // window.open(dataUri,"_blank");
 });
+
