@@ -1,11 +1,13 @@
 h1 {
     font-family: "Amatic SC";
     text-align: center;
+    color: #FF715B;
 }
 body{
     font-family: 'Raleway', sans-serif;
     text-align: center;
     background-color: #4c5b5c;
+    color: #FF715B;
 }
 .part {
     background-color: #FF715B;
