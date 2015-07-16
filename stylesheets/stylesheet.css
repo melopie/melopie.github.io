@@ -4,7 +4,8 @@ body {
 
 h1 {
 	font-family: "Amatic SC" ;
-	font-size: 80px;
+	font-size: 100px;
+	color: #4C5B5C;
 }
 .part {
 	background-color: #FF715B;
