@@ -1,8 +1,6 @@
 var numPlayers;
 var playerName;
 var roundNum;
-var canvas = document.getElementById("drawingPad");
-var context = canvas.getContext("2d");
 var isMouseDown = false;
 var mouseX = 0;
 var mouseY = 0;
@@ -31,11 +29,16 @@ var showInput = function()  {
     console.log(dict);
 
 };
-context.strokeStyle = "#000000"; // drawing black lines.
+var canvas = document.getElementById("drawingPad");
+var ctx = canvas.getContext("2d");
+var isMouseDown = false;
+var mouseX = 0;
+
+ctx.strokeStyle = "#000000"; // drawing black lines.
 
 // make sure the canvas' background is actually white for saving.
-context.fillStyle = "#FCF0AD";
-context.fillRect(0, 0, canvas.width, canvas.height);
+ctx.fillStyle = "#FCF0AD";
+ctx.fillRect(0, 0, canvas.width, canvas.height);
 
 // when the user presses their mouse down on the canvas.
 canvas.addEventListener("mousedown", function (evt) {
@@ -44,8 +47,8 @@ canvas.addEventListener("mousedown", function (evt) {
     mouseX = evt.offsetX;
     mouseY = evt.offsetY;
 
-    context.beginPath();
-    context.moveTo(mouseX, mouseY);
+    ctx.beginPath();
+    ctx.moveTo(mouseX, mouseY);
 });
 
 // when the user lifts their mouse up anywhere on the screen.
@@ -59,8 +62,8 @@ canvas.addEventListener("mousemove", function (evt) {
         mouseX = evt.offsetX;
         mouseY = evt.offsetY;
 
-        context.lineTo(mouseX, mouseY);
-        context.stroke();
+        ctx.lineTo(mouseX, mouseY);
+        ctx.stroke();
     }
 });
 
@@ -76,14 +79,14 @@ for (var i = 0; i < swatches.length; i++) {
     }
 
     // when we click on a swatch...
-    swatch.addEventListener("click", function (evt)) {
+    swatch.addEventListener("click", function (evt) {
 
         this.className = "active"; // give the swatch a class of "active", which will trigger the CSS border.
         currentSwatch.className = ""; // remove the "active" class from the previously selected swatch
         currentSwatch = this; // set this to the current swatch so next time we'll take "active" off of this.
 
-        context.strokeStyle = this.style.backgroundColor; // set the background color for the canvas.
-    }
+        ctx.strokeStyle = this.style.backgroundColor; // set the background color for the canvas.
+    });
 }
 
 // when the clear button is clicked
@@ -92,8 +95,8 @@ clearBtn.addEventListener("click", function (evt) {
     canvas.width = canvas.width; // this is all it takes to clear!
 
     // make sure the canvas' background is actually white for saving.
-    context.fillStyle = "#FCF0AD";
-    context.fillRect(0, 0, canvas.width, canvas.height);
+    ctx.fillStyle = "#FCF0AD";
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
 });
 
 // when the save button is clicked
@@ -139,7 +142,7 @@ saveBtn.addEventListener("click", function (evt) {
 
 // SECOND DRAWING PAD
 var canvas2 = document.getElementById("drawingPad2");
-var context2 = canvas2.getContext("2d");
+var ctx2 = canvas2.getContext("2d");
 var isMouseDown2 = false;
 var mouseX2 = 0;
 var mouseY2 = 0;
@@ -152,11 +155,11 @@ var turn12 = 1;
 var turn22 = 2;
 */
 
-context2.strokeStyle = "#000000"; // drawing black lines.
+ctx2.strokeStyle = "#000000"; // drawing black lines.
 
 // make sure the canvas' background is actually white for saving.
-context2.fillStyle = "#FCF0AD";
-context2.fillRect(0, 0, canvas2.width, canvas2.height);
+ctx2.fillStyle = "#FCF0AD";
+ctx2.fillRect(0, 0, canvas2.width, canvas2.height);
 
 // when the user presses their mouse down on the canvas.
 canvas2.addEventListener("mousedown", function (evt) {
@@ -165,8 +168,8 @@ canvas2.addEventListener("mousedown", function (evt) {
     mouseX2 = evt.offsetX;
     mouseY2 = evt.offsetY;
 
-    context2.beginPath();
-    context2.moveTo(mouseX2, mouseY2);
+    ctx2.beginPath();
+    ctx2.moveTo(mouseX2, mouseY2);
 });
 
 // when the user lifts their mouse up anywhere on the screen.
@@ -180,8 +183,8 @@ canvas2.addEventListener("mousemove", function (evt) {
         mouseX2 = evt.offsetX;
         mouseY2 = evt.offsetY;
 
-        context2.lineTo(mouseX2, mouseY2);
-        context2.stroke();
+        ctx2.lineTo(mouseX2, mouseY2);
+        ctx2.stroke();
     }
 });
 
@@ -197,14 +200,14 @@ for (var j = 0; j < swatches.length; j++) {
     }
 
     // when we click on a swatch...
-    swatch2.addEventListener("click", function (evt)) {
+    swatch2.addEventListener("click", function (evt) {
 
         this.className = "active"; // give the swatch a class of "active", which will trigger the CSS border.
         currentSwatch2.className = ""; // remove the "active" class from the previously selected swatch
         currentSwatch2 = this; // set this to the current swatch so next time we'll take "active" off of this.
 
-        context2.strokeStyle = this.style.backgroundColor; // set the background color for the canvas.
-    };
+        ctx2.strokeStyle = this.style.backgroundColor; // set the background color for the canvas.
+    });
 }
 
 // when the clear button is clicked
@@ -213,8 +216,8 @@ clearBtn2.addEventListener("click", function (evt) {
     canvas2.width = canvas2.width; // this is all it takes to clear!
 
     // make sure the canvas' background is actually white for saving.
-    context2.fillStyle = "#FCF0AD";
-    context2.fillRect(0, 0, canvas2.width, canvas2.height);
+    ctx2.fillStyle = "#FCF0AD";
+    ctx2.fillRect(0, 0, canvas2.width, canvas2.height);
 });
 
 // when the save button is clicked
