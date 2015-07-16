@@ -107,6 +107,7 @@ var sendBtn = function () {
     //image pull
     for (var i = 0; i < numPlayers; i++) {
         roundNum = roundNum[i].value; //get player name
+        console.log(i);
         turnVal = canvas.toDataURL("image/jpeg");
         dict[roundNum] = turnVal; //add player and turn number to dictionary
         var turnPic = document.createElement("turnPic");
