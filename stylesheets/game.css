@@ -25,6 +25,7 @@
 body {
     background-color: #4C5B5C;
     font-family: 'Raleway', sans-serif;
+    color: #4C5B5C;
 }
 
 ul {
@@ -54,6 +55,7 @@ li.active {
 .button {
     margin-top:10px;
     font-family:Arial, sans-serif;
+    color: #4C5B5C;
     display:block;
     width:220px;
     padding:5px 10px;
