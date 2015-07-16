@@ -10,7 +10,7 @@ body{
     color: #FF715B;
 }
 .part {
-    background-color: #FF715B;
+    background-color: #fcc6c2; /* color of the border */
     border-radius: 20px;
     width: 160px;
     text-align: center;
@@ -24,7 +24,7 @@ body{
     margin-bottom: 10px;
 }
 .fname1 {
-    background-color: #30C5FF;
+    background-color: #dbf0fa; /* color of the textbox */
     border-radius: 5px;
 }
 a {
