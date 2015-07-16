@@ -11,9 +11,17 @@
 	background-color: #FF715B;
 	border-radius: 20px;
 	width: 300px;
+	height: 300px;
 	text-align: center;
 	vertical-align: center;
-	margin: 10px;
+	width: 50%;
+  	transform: translate(-50%, -50%);
+  	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	padding: 20px;
+  	resize: both;
+  	overflow: auto;
 }
 
 body {
