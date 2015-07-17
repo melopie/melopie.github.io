@@ -120,6 +120,8 @@ saveBtn.addEventListener("click", function (evt) {
 var sendBtn = document.getElementById("send");
 sendBtn.addEventListener("click", function (evt) {
 	for (var i = 0; i < numPlayers; i++) {
+		console.log("in send function for pad 1");
+		
         roundNum = roundNum[i].value; //get player name
         turnVal = canvas.toDataURL("image/jpeg");
         dict[roundNum] = turnVal; //add player and turn number to dictionary
@@ -138,6 +140,8 @@ sendBtn.addEventListener("click", function (evt) {
 
 
 // SECOND DRAWING PAD
+
+
 var canvas2 = document.getElementById("drawingPad2");
 var ctx2 = canvas2.getContext("2d");
 var isMouseDown2 = false;
