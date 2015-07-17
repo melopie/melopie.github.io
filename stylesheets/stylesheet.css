@@ -84,6 +84,11 @@ a {
     border: 5px, solid #4C5B5C; /* change this color with the background */
     width: 400px;
 }
+
+.nav {
+	color: #FF715B;
+}
+
 ul {
     list-style-type:horizontal;
     margin:0;
