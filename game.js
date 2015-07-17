@@ -139,9 +139,6 @@ sendBtn.addEventListener("click", function (evt) {
     }//end of for loop
     //console.log("sent");
     
-    
-    showInput();
-    
 });
 
 
