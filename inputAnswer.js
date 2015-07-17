@@ -1,2 +1,4 @@
-var theInput = document.getElementById('').value;
+function printvalue(){
+var answer = document.getElementById('answer').value;
 console.log(answer);
+}
