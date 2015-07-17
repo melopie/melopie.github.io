@@ -91,6 +91,12 @@ for (var i = 0; i < swatches.length; i++) {
     });
 }
 
+//when Start Game in index.html is pressed
+var startBtn = document.getElementById("Start the game");
+startBtn.addEventListener("click", function (evt) {
+	showInput();
+});
+
 // when the clear button is clicked
 var clearBtn = document.getElementById("clear");
 clearBtn.addEventListener("click", function (evt) {
