@@ -10,6 +10,27 @@ var turnVal;
 var twiceNum;
 //name input
 
+var showInput = function(){
+	
+    console.log("Inside showInput function");
+    numPlayers = document.getElementById("numPlayersID").value;
+    console.log("Number of players: " + numPlayers);
+    var playerNames = [];
+    playerNames = document.getElementsByClassName("fname1");
+    //console.log(playerNames);
+    // console.log(playerNames[0]);
+    // console.log(playerNames[0].value);
+    for (var i = 0; i < numPlayers; i++) {
+        roundNum = i;
+        playerName = playerNames[i].value; //get player name
+        dict[playerName] = roundNum; //add player and turn number to dictionary
+
+        console.log("Player Name: " + playerName);
+        console.log("Turn number: " + i);
+    }
+    console.log(dict);
+}
+
 var canvas = document.getElementById("drawingPad");
 var ctx = canvas.getContext("2d");
 var isMouseDown = false;
@@ -101,7 +122,7 @@ saveBtn.addEventListener("click", function (evt) {
 var sendBtn = document.getElementById("send");
 sendBtn.addEventListener("click", function (evt) {
 	for (var i = 0; i < numPlayers; i++) {
-		console.log("in send function for pad 1");
+		//console.log("in send function for pad 1");
 		
         roundNum = roundNum[i].value; //get player name
         turnVal = canvas.toDataURL("image/jpeg");
@@ -118,7 +139,7 @@ sendBtn.addEventListener("click", function (evt) {
     }//end of for loop
     //console.log("sent");
     
-    var showInput = function()  {
+    
     console.log("Inside showInput function");
     numPlayers = document.getElementById("numPlayersID").value;
     console.log("Number of players: " + numPlayers);
@@ -136,9 +157,6 @@ sendBtn.addEventListener("click", function (evt) {
         console.log("Turn number: " + i);
     }
     console.log(dict);
-
-};
-    showInput();
     
 });
 
