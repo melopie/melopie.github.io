@@ -45,7 +45,13 @@ a {
 }
 
 /* input names */
-.part {
+.nameTitle {
+    font-family: "Amatic SC";
+    text-align: center;
+    color: #FF715B;
+    font-size: 50px;
+}
+.part { /* form */
     background-color: #FF715B; /* color of the border */
     border-radius: 20px;
     width: 160px;
@@ -56,15 +62,15 @@ a {
     margin-bottom: 5px;
     margin-top: 5px;
 }
+.fname1 { /* form */
+    background-color: #dbf0fa; /* color of the textbox */
+    border-radius: 5px;
+}
 #player {
     margin-bottom: 20px;
 }
 .text {
 	color: #FF715B;
-}
-.fname1 {
-    background-color: #dbf0fa; /* color of the textbox */
-    border-radius: 5px;
 }
 
 /* game */
