@@ -109,7 +109,7 @@ ul {
 li {
     margin: auto 0;
     padding:0;
-    border: 2px solid #4C5B5C; /* change this color with the background */
+    border: 2px solid #FFFFFF; /* change this color with the background */
     display:block;
     float:left;
     width:30px;
