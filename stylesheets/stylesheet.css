@@ -75,12 +75,12 @@ a {
 }
 
 /* GAME */
-#1 {
+#one {
     border: 5px, solid #4C5B5C; /* change this color with the background */
     width: 50px;
 }
 
-#2 {
+#two {
     border: 5px, solid #4C5B5C; /* change this color with the background */
     width: 400px;
 }
