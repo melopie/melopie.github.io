@@ -29,7 +29,7 @@ var showInput = function(){
         console.log("Turn number: " + i);
     }
     console.log(dict);
-}
+};
 
 var canvas = document.getElementById("drawingPad");
 var ctx = canvas.getContext("2d");
