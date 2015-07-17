@@ -138,7 +138,7 @@ sendBtn.addEventListener("click", function (evt) {
     console.log(dict);
 
 };
-    
+    showInput();
     
 });
 
