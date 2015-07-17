@@ -76,12 +76,12 @@ a {
 
 /* GAME */
 #1 {
-    border: 5px, solid #FFFFFF;
+    border: 5px, solid #4C5B5C;
     width: 50px;
 }
 
 #2 {
-    border: 5px, solid black;
+    border: 5px, solid #4C5B5C;
     width: 400px;
 }
 ul {
@@ -105,7 +105,7 @@ li {
 }
 
 li.active {
-    border:2px solid #4C5B5C;
+    border:2px solid #FFFFFF;
 }
 
 .button {
