@@ -85,11 +85,12 @@ a {
     width: 400px;
 }
 
-.top {
+.topBar {
 	color: #FF715B;
+	top:15px;
 }
 
-.left {
+.leftBar {
 	color: #FF715B;
 }
 
