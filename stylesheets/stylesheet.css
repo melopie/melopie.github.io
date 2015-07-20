@@ -174,7 +174,7 @@ footer {
 
 /* IMPORTANT General styles for all menus */
 .cbp-spmenu {
-	background: #3B97D3;
+	background: #55d6be;
 	position: fixed;
 }
 
@@ -189,7 +189,7 @@ footer {
 	
 }
 .cbp-spmenu a:hover {
-	background: #35495e;
+	background: #338072;
 }
 .cbp-spmenu-vertical {
 	width: 20%;
