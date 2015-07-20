@@ -92,12 +92,14 @@ a {
 
 #first {
 	float: left;
-	top:25;
+	top: 25px;
+	left: 10px;
 }
 
 #second {
 	float: right;
-	top:25;
+	top: 25px;
+	right: 10px;
 }
 
 ul {
