@@ -17,9 +17,7 @@ function showInput(){
     console.log("Number of players: " + numPlayers);
     var playerNames = [];
     playerNames = document.getElementsByClassName("fname1");
-    //console.log(playerNames);
-    // console.log(playerNames[0]);
-    // console.log(playerNames[0].value);
+    
     for (var i = 0; i < numPlayers; i++) {
         roundNum = i;
         playerName = playerNames[i].value; //get player name
