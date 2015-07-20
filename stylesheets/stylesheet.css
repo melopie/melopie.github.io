@@ -9,6 +9,9 @@ body {
 	font-size: 100px;
 	color: #4C5B5C;
 }
+#start {
+	margin: 5px;
+}
 a {
 	text-decoration: none;	
 }
