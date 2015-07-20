@@ -138,7 +138,7 @@ sendBtn.addEventListener("click", function (evt) {
         var turnPic = document.createElement("turnPic");
         console.log("sent");
         document.body.appendChild(turnPic);
-    }//end of for loop
+    	}//end of for loop
     twiceNum = 2 * numPlayers;
     //text pull
     for (var k = 0; k < twiceNum; k++) {
