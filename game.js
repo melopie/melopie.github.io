@@ -137,14 +137,15 @@ sendBtn.addEventListener("click", function (evt) {
         turnVal = canvas.toDataURL("image/jpeg");
         dict[roundNum] = turnVal; //add player and turn number to dictionary
         var turnPic = document.createElement("turnPic");
-        console.log("sent");
         
-        
+
         //added in now
     	var img = document.getElementById('turnPic');
     	img.style.visibility = 'visible';
 	//end edit
         document.body.appendChild(turnPic);
+        
+        console.log("end of first loop");
     	}//end of for loop
     twiceNum = 2 * numPlayers;
     //text pull
@@ -154,7 +155,7 @@ sendBtn.addEventListener("click", function (evt) {
     }//end of for loop
     //console.log("sent");
 	console.log("end of send");   
-
+	console.log(dict);
 });
 
 
