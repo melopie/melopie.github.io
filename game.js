@@ -126,8 +126,9 @@ saveBtn.addEventListener("click", function (evt) {
 
 //send function
 var sendBtn = document.getElementById("send");
-console.log("beginning send");
+
 sendBtn.addEventListener("click", function (evt) {
+	console.log("beginning send");
 	for (var i = 0; i < numPlayers; i++) {
 		//console.log("in send function for pad 1");
 		
