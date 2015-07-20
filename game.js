@@ -126,6 +126,7 @@ saveBtn.addEventListener("click", function (evt) {
 
 //send function
 var sendBtn = document.getElementById("send");
+console.log("beginning send");
 sendBtn.addEventListener("click", function (evt) {
 	for (var i = 0; i < numPlayers; i++) {
 		//console.log("in send function for pad 1");
@@ -144,7 +145,7 @@ sendBtn.addEventListener("click", function (evt) {
         println(roundNum);
     }//end of for loop
     //console.log("sent");
-    
+console.log("end of set");    
 });
 
 
