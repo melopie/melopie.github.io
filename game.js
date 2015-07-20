@@ -1,4 +1,4 @@
-var numPlayers;
+var numPlayers = 2;
 var playerName;
 var roundNum;
 var isMouseDown = false;
