@@ -1,3 +1,13 @@
+var numPlayers = 2;
+var playerName;
+var roundNum;
+var dict = {};
+var datadict = {};
+var turnVal;
+var twiceNum;
+
+//name input
+
 var isMouseDown = false;
 var mouseX = 0;
 var mouseY = 0;
