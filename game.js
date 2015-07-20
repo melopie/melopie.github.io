@@ -17,7 +17,6 @@ function showInput(){
     console.log("Number of players: " + numPlayers);
     var playerNames = [];
     playerNames = document.getElementsByClassName("fname1");
-    
     for (var i = 0; i < numPlayers; i++) {
         roundNum = i;
         playerName = playerNames[i].value; //get player name
@@ -109,25 +108,54 @@ clearBtn2.addEventListener("click", function (evt) {
 });
 
 // when the save button is clicked
-var saveBtn2 = document.getElementById("save2");
+var clearBtn2 = document.getElementById("clear2");
+clearBtn2.addEventListener("click", function (evt) {
+    canvas.width = canvas.width; // this is all it takes to clear!
+
+    // make sure the canvas' background is actually white for saving.
+    ctx.fillStyle = "#FCF0AD";
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+});
 
 //send function
 var sendBtn2 = function () {
-    if (turn2 === 0) {
-        turn2++;
-        dict2.push({
-            player: drawing - now.jpg
-        });
-        // replace screen with pushed image, and add textbox
+sendBtn2.addEventListener("click", function (evt) {
+	numPlayers = 2;
+	console.log("test: " + numPlayers);
+	console.log(dict);
+	for (var i = 0; i < numPlayers; i++) {
+		//console.log("in send function for pad 1");
+		console.log("beginning send");
+        	roundNum = dict[i].value; //get player name
+        	turnVal = canvas.toDataURL("image/jpeg");
+        	datadict[roundNum] = turnVal; //add player and turn number to new dictionary
+        	console.log(datadict);
+        	var turnPic = document.createElement("turnPic");
+        
 
-        //next player would see text box and an empty post-it
-    } else {
-        turn2 = 0 + numPlayers;
-        //only works for first player
-        //must change to dict[player, numofPlayer]
-    }
-};
+		 //added in now
+    		var img = document.getElementById('turnPic');
+    		img.style.visibility = 'visible';
+		//end edit
+        	document.body.appendChild(turnPic);
+        
+        	console.log("end of first loop");
+    	}//end of for loop
+    
+    	twiceNum = 2 * numPlayers;
+    	
+    	//text pull
+    	for (var k = 0; k < twiceNum; k++) {
+	 	roundNum = roundNum[k].value; 
+        	console.log(roundNum);
+    	}//end of for loop
+    	
+    	//console.log("sent");
+	console.log("end of send");   
+	console.log(dict);
+});
 
+var saveBtn2 = document.getElementById("save2");
 saveBtn2.addEventListener("click", function (evt) {
     // we'll save using the new HTML5 download attribute to save the image. 
     // we'll give the image a name of draw-[timestamp].jpg
