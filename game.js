@@ -97,6 +97,7 @@ startBtn.addEventListener("click", function (evt) {
 	showInput();
 });*/
 
+
 // when the clear button is clicked
 var clearBtn = document.getElementById("clear");
 clearBtn.addEventListener("click", function (evt) {
@@ -137,6 +138,12 @@ sendBtn.addEventListener("click", function (evt) {
         dict[roundNum] = turnVal; //add player and turn number to dictionary
         var turnPic = document.createElement("turnPic");
         console.log("sent");
+        
+        
+        //added in now
+    	var img = document.getElementById('turnPic');
+    	img.style.visibility = 'visible';
+	//end edit
         document.body.appendChild(turnPic);
     	}//end of for loop
     twiceNum = 2 * numPlayers;
@@ -146,7 +153,8 @@ sendBtn.addEventListener("click", function (evt) {
         println(roundNum);
     }//end of for loop
     //console.log("sent");
-console.log("end of set");    
+	console.log("end of send");   
+
 });
 
 
