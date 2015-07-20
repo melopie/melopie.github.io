@@ -10,7 +10,7 @@ var turnVal;
 var twiceNum;
 //name input
 
-var showInput = function(){
+function showInput(){
 	
     console.log("Inside showInput function");
     numPlayers = document.getElementById("numPlayersID").value;
