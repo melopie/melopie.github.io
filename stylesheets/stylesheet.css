@@ -90,15 +90,15 @@ a {
 	top: 15px;
 	height: 92px;
 	font-family: "Amatic SC";
-	font-size: 80px;
-	background-color: #e7f5fc;
+	font-size: 30px;
+	background-color: #a5adad;
 }
 
 .leftBar {
 	font-family: 'Raleway', sans-serif;
-	font-size: 30px;
+	font-size: 10px;
 	color: #FF715B;
-	background-color: #e7f5fc;
+	background-color: #a5adad;
 }
 
 .nav {
@@ -106,13 +106,13 @@ a {
 	text-align: center;
 }
 
-#second {
-	float: right;
+#first {
+	float: left;
 	top:25;
 }
 
-#first {
-	float: left;
+#second {
+	float: right;
 	top:25;
 }
 
