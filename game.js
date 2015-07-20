@@ -28,16 +28,6 @@ function showInput(){
     console.log(dict);
 }
 
-// when the clear button is clicked
-var clearBtn = document.getElementById("clear");
-clearBtn.addEventListener("click", function (evt) {
-    canvas.width = canvas.width; // this is all it takes to clear!
-
-    // make sure the canvas' background is actually white for saving.
-    ctx.fillStyle = "#FCF0AD";
-    ctx.fillRect(0, 0, canvas.width, canvas.height);
-});
-
 // when the save button is clicked
 var saveBtn = document.getElementById("save");
 saveBtn.addEventListener("click", function (evt) {
@@ -96,26 +86,6 @@ sendBtn.addEventListener("click", function (evt) {
 
 
 // SECOND DRAWING PAD
-
-// when the clear button is clicked
-var clearBtn2 = document.getElementById("clear2");
-clearBtn2.addEventListener("click", function (evt) {
-    canvas2.width = canvas2.width; // this is all it takes to clear!
-
-    // make sure the canvas' background is actually white for saving.
-    ctx2.fillStyle = "#FCF0AD";
-    ctx2.fillRect(0, 0, canvas2.width, canvas2.height);
-});
-
-// when the save button is clicked
-var clearBtn2 = document.getElementById("clear2");
-clearBtn2.addEventListener("click", function (evt) {
-    canvas.width = canvas.width; // this is all it takes to clear!
-
-    // make sure the canvas' background is actually white for saving.
-    ctx.fillStyle = "#FCF0AD";
-    ctx.fillRect(0, 0, canvas.width, canvas.height);
-});
 
 //send function
 var sendBtn2 = function () {
