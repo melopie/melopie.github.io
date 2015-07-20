@@ -5,6 +5,9 @@ var dict = {};
 var datadict = {};
 var turnVal;
 var twiceNum;
+var isMouseDown = false;
+var mouseX = 0;
+var mouseY = 0;
 //name input
 
 function showInput(){
