@@ -1,3 +1,7 @@
+var isMouseDown = false;
+var mouseX = 0;
+var mouseY = 0;
+
 var canvas = document.getElementById("drawingPad");
 var ctx = canvas.getContext("2d");
 var isMouseDown = false;
