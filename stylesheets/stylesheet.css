@@ -91,18 +91,12 @@ a {
 }
 
 #first {
-	/*float: left;*/
-	/*top: 25px;*/
-	/*left: 10px;*/
 	position: absolute;
 	top: 0px;
 	left: 25px;
 }
 
 #second {
-	/*float: right;*/
-	/*top: 25px;*/
-	/*right: 10px;*/
 	position: absolute;
 	top: 0px;
 	right: 25px;
