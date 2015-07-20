@@ -131,12 +131,14 @@ var sendBtn = document.getElementById("send");
 sendBtn.addEventListener("click", function (evt) {
 	numPlayers = 2;
 	console.log("test: " + numPlayers);
+	console.log(dict);
 	for (var i = 0; i < numPlayers; i++) {
 		//console.log("in send function for pad 1");
 		console.log("beginning send");
         	roundNum = dict[i].value; //get player name
         	turnVal = canvas.toDataURL("image/jpeg");
-        	datadict[roundNum] = turnVal; //add player and turn number to dictionary
+        	datadict[roundNum] = turnVal; //add player and turn number to new dictionary
+        	console.log(datadict);
         	var turnPic = document.createElement("turnPic");
         
 
