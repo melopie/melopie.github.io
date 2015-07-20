@@ -129,31 +129,34 @@ saveBtn.addEventListener("click", function (evt) {
 var sendBtn = document.getElementById("send");
 
 sendBtn.addEventListener("click", function (evt) {
-	console.log(numPlayers);
+	console.log("test: " + numPlayers);
 	for (var i = 0; i < numPlayers; i++) {
 		//console.log("in send function for pad 1");
-	console.log("beginning send");
-        roundNum = roundNum[i].value; //get player name
-        turnVal = canvas.toDataURL("image/jpeg");
-        dict[roundNum] = turnVal; //add player and turn number to dictionary
-        var turnPic = document.createElement("turnPic");
+		console.log("beginning send");
+        	roundNum = roundNum[i].value; //get player name
+        	turnVal = canvas.toDataURL("image/jpeg");
+        	dict[roundNum] = turnVal; //add player and turn number to dictionary
+        	var turnPic = document.createElement("turnPic");
         
 
-        //added in now
-    	var img = document.getElementById('turnPic');
-    	img.style.visibility = 'visible';
-	//end edit
-        document.body.appendChild(turnPic);
+		 //added in now
+    		var img = document.getElementById('turnPic');
+    		img.style.visibility = 'visible';
+		//end edit
+        	document.body.appendChild(turnPic);
         
-        console.log("end of first loop");
+        	console.log("end of first loop");
     	}//end of for loop
-    twiceNum = 2 * numPlayers;
-    //text pull
-    for (var k = 0; k < twiceNum; k++) {
-        roundNum = roundNum[k].value; 
-        console.log(roundNum);
-    }//end of for loop
-    //console.log("sent");
+    
+    	twiceNum = 2 * numPlayers;
+    	
+    	//text pull
+    	for (var k = 0; k < twiceNum; k++) {
+	 	roundNum = roundNum[k].value; 
+        	console.log(roundNum);
+    	}//end of for loop
+    	
+    	//console.log("sent");
 	console.log("end of send");   
 	console.log(dict);
 });
