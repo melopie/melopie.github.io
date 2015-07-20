@@ -1,4 +1,8 @@
+var answer;
+
 function printvalue(){
-var answer = document.getElementById('answer').value;
-console.log(answer);
+	answer = document.getElementById('answer').value;
+	console.log(answer);
 }
+
+console.log(answer);
