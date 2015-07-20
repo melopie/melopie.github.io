@@ -166,3 +166,60 @@ footer {
 	text-align: center;
 	margin-top: 500px;
 }
+
+/* IMPORTANT General styles for all menus */
+.cbp-spmenu {
+	background: #3B97D3;
+	position: fixed;
+}
+
+/* LINK STYLES */
+
+.cbp-spmenu a {
+	display: block;
+	color: #ededed;
+	font-size: 25px;
+	letter-spacing: 1px;
+	text-decoration: none;
+	
+}
+.cbp-spmenu a:hover {
+	background: #35495e;
+}
+.cbp-spmenu-vertical {
+	width: 20%;
+	height: 100%;
+	top: 0;
+	z-index:10000;
+}
+
+/* Spacing!! */
+#toolbartext a {
+	padding: 1.5em;
+}
+
+/* Vertical menu that slides from the left or right */
+
+.cbp-spmenu-left {
+	left: -20%;
+}
+
+
+.cbp-spmenu-left.cbp-spmenu-open {
+	left: 0px;
+}
+
+
+/* Transitions */
+
+.cbp-spmenu,
+.cbp-spmenu-push {
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+.cbp-spmenu-push {
+	background: white;
+	margin:0;
+}
