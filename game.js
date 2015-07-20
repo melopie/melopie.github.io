@@ -4,13 +4,13 @@ var roundNum;
 var isMouseDown = false;
 var mouseX = 0;
 var mouseY = 0;
-var dict = {};
-var datadict = {};
+var dict = [];
+//var datadict = {};
 var turnVal;
 var twiceNum;
 //name input
 
-function showInput(){
+/*function showInput(){
 	
     console.log("Inside showInput function");
     numPlayers = document.getElementById("numPlayersID").value;
@@ -29,7 +29,7 @@ function showInput(){
         console.log("Turn number: " + i);
     }
     console.log(dict);
-}
+}*/
 
 var canvas = document.getElementById("drawingPad");
 var ctx = canvas.getContext("2d");
@@ -129,7 +129,7 @@ saveBtn.addEventListener("click", function (evt) {
 var sendBtn = document.getElementById("send");
 
 sendBtn.addEventListener("click", function (evt) {
-	numPlayers = 2;
+	/*numPlayers = 2;
 	console.log("test: " + numPlayers);
 	console.log(dict);
 	for (var i = 0; i < numPlayers; i++) {
@@ -157,9 +157,14 @@ sendBtn.addEventListener("click", function (evt) {
     	for (var k = 0; k < twiceNum; k++) {
 	 	roundNum = roundNum[k].value; 
         	console.log(roundNum);
-    	}//end of for loop
-    	
-    	//console.log("sent");
+    	}//end of for loop*/
+    	var dataUri1 = canvas.toDataURL("image/jpeg");
+    	this.setAttribute("href", dataUri);
+    	dict.push({
+    		key: canvas1,
+    		value: datauri1
+    	});
+	
 	console.log("end of send");   
 	console.log(dict);
 });
