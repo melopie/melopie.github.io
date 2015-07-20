@@ -127,5 +127,20 @@ for (var j = 0; j < swatches.length; j++) {
     });
 }
 
+var clearBtn = document.getElementById("clear");
+clearBtn.addEventListener("click", function (evt) {
+    canvas.width = canvas.width; // this is all it takes to clear!
 
+    // make sure the canvas' background is actually white for saving.
+    ctx.fillStyle = "#FCF0AD";
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+});
 
+var clearBtn2 = document.getElementById("clear2");
+clearBtn2.addEventListener("click", function (evt) {
+    canvas.width = canvas.width; // this is all it takes to clear!
+
+    // make sure the canvas' background is actually white for saving.
+    ctx.fillStyle = "#FCF0AD";
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+});
