@@ -134,9 +134,9 @@ sendBtn.addEventListener("click", function (evt) {
 	for (var i = 0; i < numPlayers; i++) {
 		//console.log("in send function for pad 1");
 		console.log("beginning send");
-        	roundNum = roundNum[i].value; //get player name
+        	roundNum = dict[i].value; //get player name
         	turnVal = canvas.toDataURL("image/jpeg");
-        	dict[roundNum] = turnVal; //add player and turn number to dictionary
+        	datadict[roundNum] = turnVal; //add player and turn number to dictionary
         	var turnPic = document.createElement("turnPic");
         
 
