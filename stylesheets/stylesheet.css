@@ -154,7 +154,7 @@ footer {
 /* GAME: sidebar */
 .topBar {
 	color: #FF715B;
-	top: 10px;
+	/*top: 10px;*/
 	height: 92px;
 	font-family: "Amatic SC";
 	font-size: 25px;
