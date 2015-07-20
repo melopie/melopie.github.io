@@ -93,13 +93,13 @@ a {
 #first {
 	float: left;
 	top: 25px;
-	left: 30px;
+	left: 10px;
 }
 
 #second {
 	float: right;
 	top: 25px;
-	right: 100px;
+	right: 10px;
 }
 
 ul {
@@ -166,7 +166,7 @@ footer {
 .leftBar {
 	font-family: 'Raleway', sans-serif;
 	font-size: 15px;
-	color: #FF715B;
+	color: #55D6BE;
 }
 
 /* IMPORTANT General styles for all menus */
