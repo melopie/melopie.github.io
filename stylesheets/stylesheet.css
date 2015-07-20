@@ -128,7 +128,7 @@ li {
     quad(100, 100, 300, 100, 300, 300, 110, 290);
 }
 
-li.active {
+ul li.active {
     border:2px solid #FFFFFF;
 }
 
