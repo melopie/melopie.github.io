@@ -222,3 +222,8 @@ footer {
 	background: white;
 	margin:0;
 }
+
+#pushOut {
+	float: right;
+	background: none;
+}
