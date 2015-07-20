@@ -8,6 +8,14 @@
 </head>
 
 <body>
+    <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
+			<button id="pushOut"><a href="#">X</a></button>
+			<div id="toolbartext">
+			<a href="maps.html" ">HOME</a>
+			<a href="about.html">ABOUT</a>
+			<!-- <a href="#">SETTINGS</a> -->
+			</div>
+		</nav>
     <div class="topBar">
         <h1>Pictophone</h1>
     </div>
@@ -53,5 +61,32 @@
         <p>Go back to the <a href="index.html">homepage</a>.</p>		
     </footer>
     <script src="game.js"></script>
+    <script>
+			var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
+				body = document.body;
+			showLeft.onclick = function() {
+				classie.toggle( this, 'active' );
+				classie.toggle( menuLeft, 'cbp-spmenu-open' );
+				disableOther( 'showLeft' );
+			};
+			
+			function disableOther( button ) {
+				if( button !== 'showLeft' ) {
+					classie.toggle( showLeft, 'disabled' );
+				}
+			}
+		
+			pushOut.onclick = function() {
+				classie.toggle( this, 'active' );
+				classie.toggle( menuLeft, 'cbp-spmenu-open' );
+				disableOther( 'showLeft' );
+			};
+			
+			function disableOther( button ) {
+				if( button !== 'showLeft' ) {
+					classie.toggle( pushOut, 'disabled' );
+				}
+			}
+	</script>
 
 </html>
