@@ -1,9 +1,6 @@
 var numPlayers = 2;
 var playerName;
 var roundNum;
-var isMouseDown = false;
-var mouseX = 0;
-var mouseY = 0;
 var dict = {};
 var datadict = {};
 var turnVal;
