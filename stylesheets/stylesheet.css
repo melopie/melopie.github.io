@@ -154,7 +154,7 @@ footer {
 /* GAME: sidebar */
 .topBar {
 	color: #FF715B;
-	top: 15px;
+	top: 10px;
 	height: 92px;
 	font-family: "Amatic SC";
 	font-size: 30px;
@@ -162,7 +162,7 @@ footer {
 
 .leftBar {
 	font-family: 'Raleway', sans-serif;
-	font-size: 10px;
+	font-size: 15px;
 	color: #FF715B;
 }
 
