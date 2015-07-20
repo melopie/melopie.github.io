@@ -157,7 +157,8 @@ footer {
 	top: 10px;
 	height: 92px;
 	font-family: "Amatic SC";
-	font-size: 30px;
+	font-size: 25px;
+	float: top;
 }
 
 .leftBar {
@@ -224,6 +225,6 @@ footer {
 }
 
 #pushOut {
-	float: right;
+	/*float: right;*/
 	background: none;
 }
