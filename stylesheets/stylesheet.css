@@ -88,6 +88,8 @@ a {
 .topBar {
 	color: #FF715B;
 	top:15px;
+	height: 92px;
+	font-family: "Amatic SC";
 }
 
 .leftBar {
