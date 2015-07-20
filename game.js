@@ -129,10 +129,10 @@ saveBtn.addEventListener("click", function (evt) {
 var sendBtn = document.getElementById("send");
 
 sendBtn.addEventListener("click", function (evt) {
-	console.log("beginning send");
+	
 	for (var i = 0; i < numPlayers; i++) {
 		//console.log("in send function for pad 1");
-		
+	console.log("beginning send");
         roundNum = roundNum[i].value; //get player name
         turnVal = canvas.toDataURL("image/jpeg");
         dict[roundNum] = turnVal; //add player and turn number to dictionary
