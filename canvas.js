@@ -1,16 +1,3 @@
-var numPlayers = 2;
-var playerName;
-var roundNum;
-var isMouseDown = false;
-var mouseX = 0;
-var mouseY = 0;
-var dict = {};
-var datadict = {};
-var turnVal;
-var twiceNum;
-//name input
-
-
 var canvas = document.getElementById("drawingPad");
 var ctx = canvas.getContext("2d");
 var isMouseDown = false;
@@ -71,11 +58,6 @@ for (var i = 0; i < swatches.length; i++) {
     });
 }
 
-//when Start Game in index.html is pressed
-/*var startBtn = document.getElementById("Start the game");
-startBtn.addEventListener("click", function (evt) {
-	showInput();
-});*/
 
 // SECOND DRAWING PAD
 
