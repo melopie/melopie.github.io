@@ -87,13 +87,18 @@ a {
 
 .topBar {
 	color: #FF715B;
-	top:15px;
+	top: 15px;
 	height: 92px;
 	font-family: "Amatic SC";
+	font-size: 80px;
+	background-color: #e7f5fc;
 }
 
 .leftBar {
+	font-family: 'Raleway', sans-serif;
+	font-size: 30px;
 	color: #FF715B;
+	background-color: #e7f5fc;
 }
 
 .nav {
