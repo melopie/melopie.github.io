@@ -155,12 +155,10 @@ li.active {
 
 footer {
 	color: #FF715B;
-	/*text-align: center;*/
-	/*margin-top: 500px;*/
 	text-align: center;
 	position: absolute;
 	left: 48%;
-	bottom: 10px;
+	bottom: 5px;
 }
 
 /* GAME: sidebar */
