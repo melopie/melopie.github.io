@@ -4,10 +4,9 @@ body {
 	background-color: #4C5B5C;
 	color: #4C5B5C; /* font color */
 }
-form {
+#answer {
 	background-color: #D7263D;
 }
-
 
 .project-name {
 	font-family: "Amatic SC";
