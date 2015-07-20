@@ -68,14 +68,6 @@ var isMouseDown2 = false;
 var mouseX2 = 0;
 var mouseY2 = 0;
 
-/*
-//send button variables
-var turn2 = 1;
-var dict2 = [];
-var turn12 = 1;
-var turn22 = 2;
-*/
-
 ctx2.strokeStyle = "#000000"; // drawing black lines.
 
 // make sure the canvas' background is actually white for saving.
