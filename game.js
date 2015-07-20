@@ -150,7 +150,7 @@ sendBtn.addEventListener("click", function (evt) {
     //text pull
     for (var k = 0; k < twiceNum; k++) {
         roundNum = roundNum[k].value; 
-        println(roundNum);
+        console.log(roundNum);
     }//end of for loop
     //console.log("sent");
 	console.log("end of send");   
