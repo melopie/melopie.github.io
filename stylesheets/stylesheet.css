@@ -98,6 +98,10 @@ a {
 	text-align: center;
 }
 
+#second {
+	float: right;
+}
+
 ul {
     list-style-type:horizontal;
     margin:0;
