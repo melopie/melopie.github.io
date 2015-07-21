@@ -113,6 +113,10 @@ a {
 
 .floatingtext {
 	color: #55D6BE;
+
+}
+
+.floatingtextSecond {
 	float: right;
 	text-align: right;
 }
