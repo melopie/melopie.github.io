@@ -43,7 +43,7 @@ a {
   	overflow: auto;
 }
 
-/* HOMEPAGE: sidebar */
+/* HOMEPAGE: bar */
 .top {
     position:absolute;
     left:0; right:0;
@@ -92,7 +92,8 @@ a {
 	background-color: #dbf0fa;
 	border-radius: 5px;
 	border: none;
-	margin: 0px;
+	margin-top: 5px;
+	margin-bottom: 15px;
 }
 
 /* GAME */
