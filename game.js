@@ -1,36 +1,3 @@
-//var numPlayers = 2;
-//var playerName;
-//var roundNum;
-//var isMouseDown = false;
-//var mouseX = 0;
-//var mouseY = 0;
-//var dict = [];
-//var datadict = {};
-//var turnVal;
-//var twiceNum;
-//name input
-
-/*function showInput(){
-	
-    console.log("Inside showInput function");
-    numPlayers = document.getElementById("numPlayersID").value;
-    console.log("Number of players: " + numPlayers);
-    var playerNames = [];
-    playerNames = document.getElementsByClassName("fname1");
-    //console.log(playerNames);
-    // console.log(playerNames[0]);
-    // console.log(playerNames[0].value);
-    for (var i = 0; i < numPlayers; i++) {
-        roundNum = i;
-        playerName = playerNames[i].value; //get player name
-        dict[playerName] = roundNum; //add player and turn number to dictionary
-
-        console.log("Player Name: " + playerName);
-        console.log("Turn number: " + i);
-    }
-    console.log(dict);
-}*/
-
 var canvas = document.getElementById("drawingPad");
 var ctx = canvas.getContext("2d");
 var isMouseDown = false;
@@ -76,29 +43,22 @@ var palette = document.getElementById("palette");
 var swatches = palette.children;
 var currentSwatch; // we'll keep track of what swatch is active in this.
 
-for (var i = 0; i < swatches.length; i++) {
-    var swatch = swatches[i];
-    if (i === 0) {
-        currentSwatch = swatch;
-    }
+	for (var i = 0; i < swatches.length; i++) {
+	    var swatch = swatches[i];
+    		if (i === 0) {
+        		currentSwatch = swatch;
+    	}
 
     // when we click on a swatch...
-    swatch.addEventListener("click", function (evt) {
+    	swatch.addEventListener("click", function (evt) {
 
-        this.className = "active"; // give the swatch a class of "active", which will trigger the CSS border.
-        currentSwatch.className = ""; // remove the "active" class from the previously selected swatch
-        currentSwatch = this; // set this to the current swatch so next time we'll take "active" off of this.
+        	this.className = "active"; // give the swatch a class of "active", which will trigger the CSS border.
+	 	currentSwatch.className = ""; // remove the "active" class from the previously selected swatch
+        	currentSwatch = this; // set this to the current swatch so next time we'll take "active" off of this.
 
-        ctx.strokeStyle = this.style.backgroundColor; // set the background color for the canvas.
-    });
-}
-
-//when Start Game in index.html is pressed
-/*var startBtn = document.getElementById("Start the game");
-startBtn.addEventListener("click", function (evt) {
-	showInput();
-});*/
-
+        	ctx.strokeStyle = this.style.backgroundColor; // set the background color for the canvas.
+    	});
+	}
 
 // when the clear button is clicked
 var clearBtn = document.getElementById("clear");
@@ -130,44 +90,14 @@ saveBtn.addEventListener("click", function (evt) {
 
 //send function
 var sendBtn = document.getElementById("send");
-
 sendBtn.addEventListener("click", function (evt) {
-	/*numPlayers = 2;
-	console.log("test: " + numPlayers);
-	console.log(dict);
-	for (var i = 0; i < numPlayers; i++) {
-		//console.log("in send function for pad 1");
-		console.log("beginning send");
-        	roundNum = dict[i].value; //get player name
-        	turnVal = canvas.toDataURL("image/jpeg");
-        	datadict[roundNum] = turnVal; //add player and turn number to new dictionary
-        	console.log(datadict);
-        	var turnPic = document.createElement("turnPic");
-        
-
-		 //added in now
-    		var img = document.getElementById('turnPic');
-    		img.style.visibility = 'visible';
-		//end edit
-        	document.body.appendChild(turnPic);
-        
-        	console.log("end of first loop");
-    	}//end of for loop
-    
-    	twiceNum = 2 * numPlayers;
-    	
-    	//text pull
-    	for (var k = 0; k < twiceNum; k++) {
-	 	roundNum = roundNum[k].value; 
-        	console.log(roundNum);
-    	}//end of for loop*/
     console.log("send button clicked");
-    /*var dataUri1 = canvas.toDataURL("image/jpeg");
+    var dataUri1 = canvas.toDataURL("image/jpeg");
     dict.push({
     	key: canvas,
   	value: datauri1
     });
-    return dataUri1;*/
+    return dataUri1;
     console.log("end of send");   
 	//console.log(dict);
 });
@@ -185,14 +115,6 @@ var ctx2 = canvas2.getContext("2d");
 var isMouseDown2 = false;
 var mouseX2 = 0;
 var mouseY2 = 0;
-
-/*
-//send button variables
-var turn2 = 1;
-var dict2 = [];
-var turn12 = 1;
-var turn22 = 2;
-*/
 
 ctx2.strokeStyle = "#000000"; // drawing black lines.
 
