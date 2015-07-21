@@ -93,7 +93,7 @@ sendBtn.addEvenListener("click",function (evt) {
 });
 // SECOND DRAWING PAD
 
-var canvas2 = document.getElementById("drawingPad");
+var canvas2 = document.getElementById("drawingPad2");
 var context2 = canvas2.getContext("2d");
 var isMouseDown2 = false;
 var mouseX2 = 0;
@@ -102,7 +102,7 @@ var mouseY2 = 0;
 context2.strokeStyle = "#000000"; // drawing black lines.
 
 // make sure the canvas' background is actually white for saving.
-context2.fillStyle = "#ffffff";
+context2.fillStyle = "#fcf0ad";
 context2.fillRect(0,0,canvas.width,canvas.height);
 
 // when the user presses their mouse down on the canvas.
