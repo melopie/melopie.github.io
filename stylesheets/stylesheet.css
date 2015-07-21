@@ -116,9 +116,8 @@ a {
 
 }
 
-.floatingtextSecond {
-	float: right;
-	text-align: right;
+.pad {
+	margin: 0 auto;
 }
 
 #first {
