@@ -4,20 +4,6 @@ body {
 	background-color: #4C5B5C;
 	color: #4C5B5C; /* font color */
 }
-.fname1 {
-	background-color:#30C5FF;
-}
-.floatingtext {
-	color: #55D6BE;
-	float: right;
-	text-align: right;
-}
-.buttony {
-	background-color: #30C5FF;
-	border-radius: 5px;
-	border: 1px solid #4C5B5C;
-	margin: 0px;
-}
 .project-name {
 	font-family: "Amatic SC";
 	font-size: 100px;
@@ -102,6 +88,12 @@ a {
 	color: #FF715B;
 	text-align: center;
 }
+.buttony {
+	background-color: #30C5FF;
+	border-radius: 5px;
+	border: 1px solid #4C5B5C;
+	margin: 0px;
+}
 
 /* GAME */
 #one {
@@ -117,6 +109,12 @@ a {
 .nav {
 	color: #FF715B;
 	text-align: center;
+}
+
+.floatingtext {
+	color: #55D6BE;
+	float: right;
+	text-align: right;
 }
 
 #first {
