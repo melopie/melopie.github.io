@@ -92,20 +92,20 @@ saveBtn.addEventListener("click", function (evt) {
 var sendBtn = document.getElementById("send");
 sendBtn.addEventListener("click", function (evt) {
     console.log("send button clicked");
-    var picture1 = canvas.toDataURL("image/jpeg");
+   /* var picture1 = canvas.toDataURL("image/jpeg");
     dict.push({
     	key: canvas,
   	value: picture1
     });
     return picture1;
     console.log("end of send");   
-	//console.log(dict);
+	//console.log(dict);*/
 });
 
-var readyBtn = document.getElementById("ready");
+/*var readyBtn = document.getElementById("ready");
 readyBtn.addEventListener("click", function (evt) {
    console.log("ready button clicked");
-});
+});*/
 
 // SECOND DRAWING PAD
 
@@ -201,7 +201,7 @@ saveBtn2.addEventListener("click", function (evt) {
 //send function
 var sendBtn2 = function () {
 sendBtn2.addEventListener("click", function (evt) {
-    var picture = canvas2.toDataURL("image/jpeg");
+    /*var picture = canvas2.toDataURL("image/jpeg");
     	this.setAttribute("href", dataUri2);
     	dict.push({
     		key: canvas2,
@@ -209,7 +209,7 @@ sendBtn2.addEventListener("click", function (evt) {
     	});
     	return picture2;
 	console.log("end of send");   
-	//console.log(dict);
+	//console.log(dict);*/
 });
 
 
