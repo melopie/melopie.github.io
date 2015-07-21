@@ -169,6 +169,10 @@ sendBtn.addEventListener("click", function (evt) {
 	//console.log(dict);
 });
 
+var readyBtn = document.getElementById("Ready");
+readyBtn.addEventListener("click", function (evt) {
+   console.log("ready button clicked");
+});
 
 // SECOND DRAWING PAD
 
