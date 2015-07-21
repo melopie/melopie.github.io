@@ -92,12 +92,12 @@ saveBtn.addEventListener("click", function (evt) {
 var sendBtn = document.getElementById("send");
 sendBtn.addEventListener("click", function (evt) {
     console.log("send button clicked");
-    var dataUri1 = canvas.toDataURL("image/jpeg");
+    var picture1 = canvas.toDataURL("image/jpeg");
     dict.push({
     	key: canvas,
-  	value: datauri1
+  	value: picture1
     });
-    return dataUri1;
+    return picture1;
     console.log("end of send");   
 	//console.log(dict);
 });
@@ -201,13 +201,13 @@ saveBtn2.addEventListener("click", function (evt) {
 //send function
 var sendBtn2 = function () {
 sendBtn2.addEventListener("click", function (evt) {
-    var dataUri2 = canvas2.toDataURL("image/jpeg");
+    var picture = canvas2.toDataURL("image/jpeg");
     	this.setAttribute("href", dataUri2);
     	dict.push({
     		key: canvas2,
-    		value: datauri2
+    		value: picture2
     	});
-    	return dataUri2;
+    	return picture2;
 	console.log("end of send");   
 	//console.log(dict);
 });
