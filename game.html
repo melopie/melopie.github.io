@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 
 <head>
-    <link href='http://fonts.googleapis.com/css?family=Raleway:300' rel='stylesheet' type='text/css'>
-    <link rel="import" href="index.html">
-    <link rel="import" href="inputNames.html">
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+	<link href='http://fonts.googleapis.com/css?family=Raleway:300' rel='stylesheet' type='text/css'>
+	<link rel="import" href="index.html">
+	<link rel="import" href="inputNames.html">
+	<link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
 </head>
-
 <body>
 	<!--sidebar-->
     	<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
@@ -17,82 +16,64 @@
 				<!-- <a href="#">SETTINGS</a> -->
 			</div>
 	</nav>
-	<button id="showLeft"><img src="https://cloud.githubusercontent.com/assets/13319161/8806626/7fb743b0-2f8c-11e5-81b5-23f729089d6f.png" alt="Menu" id="ham">
-</button>
-	<!--end of the sidebar-->
-
-    <div class="topBar">
-        <h1>Pictophone</h1>
-    </div>
-    <div class="leftBar">
-    </div>
-    <div id= "wrapper" class="main">
-        <div id="first">
-            <ul id="palette">
-                <li class="active" style="background:#000000"></li>
-                <li style="background:#FF715B"></li>
-                <li style="background:#D7263D"></li>
-                <li style="background:#55D6BE"></li>
-                <li style="background:#2F52E0"></li>
-                <li style="background:#30C5FF"></li>
-            </ul>
-            <canvas id="drawingPad" width="200" height="200"></canvas>
-            <a href="#" class="button" id="clear">Clear</a>
-            <a href="#" class="button" id="send">Send</a>
-            <a href="#" class="button" id="save" download="drawing.png" target="_blank">Save</a>
-            
-            <!--text box begins here-->
-        
-       <form>
-		<br>
-		<div class= 'floatingtext'>
-			<p>What does this picture represent: </p><br>
-			<center><input type="text" id="answer"  value=""><br></center>
-			<a href="#" class = "button" id = "Submit" onclick="printvalue();">Submit</a>
-		</div>
-		</br>
-		<a href="#" class = "button" id = "readyBtn" onclick="readyBtn();">Ready</a>
-	</form>
-
-	<script src="inputAnswer.js"></script>
-
- 
-        <!--text box ends here-->
-        
-        </div>  
-        
-        <br>
-        <div id="second">
-            <ul id="palette2">
-                <li class="active" style="background:#000000"></li>
-                <li style="background:#FF715B"></li>
-                <li style="background:#D7263D"></li>
-                <li style="background:#55D6BE"></li>
-                <li style="background:#2F52E0"></li>
-                <li style="background:#30C5FF"></li>
-            </ul>
-            <canvas id="drawingPad2" width="200" height="200"></canvas>
-            <a href="#" class="button" id="clear2">Clear</a>
-            <a href="#" class="button" id="send2">Send</a>
-            <a href="#" class="button" id="save2" download="drawing.png" target="_blank">Save</a>
-        </div>
-	<br>
-	<form>
-	
-	<!--text box for Drawing Pad 2 starts here-->
-	<div class= 'floatingtextSecond'>
-		What does this picture represent: <br>
-		<center></a></a><input type="text" id="answer"  value=""><br></center>
-		<a href="#" class = "button" id = "Submit" onclick="printvalue();">Submit</a>
+	<button id="showLeft"><img src="https://cloud.githubusercontent.com/assets/13319161/8806626/7fb743b0-2f8c-11e5-81b5-23f729089d6f.png" alt="Menu" id="ham"></button>
+	<div class="topBar">
+		<h1>Pictophone</h1>
 	</div>
-	</br>
-	<a href="#" class = "button" id = "readyBtn" onclick="readyBtn();">Ready</a>
-	</form>
-	<script src="inputAnswer.js"></script>
-	
-        <!--text box FOR DRAWING PAD 2 ends here-->
-    </div>
-    
+	<div id= "wrapper" class="main">
+	        <div id="first">
+	        	<ul id="palette">
+		                <li class="active" style="background:#000000"></li>
+		                <li style="background:#FF715B"></li>
+		                <li style="background:#D7263D"></li>
+		                <li style="background:#55D6BE"></li>
+		                <li style="background:#2F52E0"></li>
+		                <li style="background:#30C5FF"></li>
+	        	</ul>
+	        	<canvas id="drawingPad" width="200" height="200"></canvas>
+	        	<a href="#" class="button" id="clear">Clear</a>
+	        	<a href="#" class="button" id="send">Send</a>
+	        	<a href="#" class="button" id="save" download="drawing.png" target="_blank">Save</a>
+			<form>
+				<br>
+				<div class= 'floatingtext'>
+					What does this picture represent: <br>
+					<center><input type="text" id="answer" value=""><br></center>
+					<a href="#" class = "button" id = "Submit" onclick="printvalue();">Submit</a>
+				</div>
+				</br>
+				<a href="#" class = "button" id = "readyBtn" onclick="readyBtn();">Ready</a>
+			</form>
+			<script src="inputAnswer.js"></script>
+	        </div>  
+        
+        	<br>
+        	<div id="second">
+            		<ul id="palette2">
+                		<li class="active" style="background:#000000"></li>
+                		<li style="background:#FF715B"></li>
+                		<li style="background:#D7263D"></li>
+                		<li style="background:#55D6BE"></li>
+                		<li style="background:#2F52E0"></li>
+                		<li style="background:#30C5FF"></li>
+            		</ul>
+            		<canvas id="drawingPad2" width="200" height="200"></canvas>
+            		<a href="#" class="button" id="clear2">Clear</a>
+            		<a href="#" class="button" id="send2">Send</a>
+            		<a href="#" class="button" id="save2" download="drawing.png" target="_blank">Save</a>
+			<form>
+				<br>
+				<div class= 'floatingtext'>
+					What does this picture represent: <br>
+					<center><input type="text" id="answer"  value=""><br></center>
+					<a href="#" class = "button" id = "Submit" onclick="printvalue();">Submit</a>
+				</div>
+				</br></a>
+				<a href="#" class = "button" id = "readyBtn" onclick="readyBtn();">Ready</a>
+			</form>
+			<script src="inputAnswer.js"></script>
+    		</div>
+    	</div>
 </body>
     <script src="game.js"></script>
     <script src="gameSidebar.js"></script>
