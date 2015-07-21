@@ -1,4 +1,4 @@
-var numPlayers = 2;
+//var numPlayers = 2;
 var playerName;
 var roundNum;
 var isMouseDown = false;
@@ -166,7 +166,7 @@ sendBtn.addEventListener("click", function (evt) {
     	});
     	return dataUri1;
 	console.log("end of send");   
-	console.log(dict);
+	//console.log(dict);
 });
 
 
@@ -266,7 +266,7 @@ sendBtn2.addEventListener("click", function (evt) {
     	});
     	return dataUri2;
 	console.log("end of send");   
-	console.log(dict);
+	//console.log(dict);
 });
 
 saveBtn2.addEventListener("click", function (evt) {
