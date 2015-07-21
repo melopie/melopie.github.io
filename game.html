@@ -50,30 +50,30 @@
         
         	<br>
         	<div id="second">
-            		<ul id="palette2">
-                		<li class="active" style="background:#000000"></li>
-                		<li style="background:#FF715B"></li>
-                		<li style="background:#D7263D"></li>
-                		<li style="background:#55D6BE"></li>
-                		<li style="background:#2F52E0"></li>
-                		<li style="background:#30C5FF"></li>
-            		</ul>
-            		<center><canvas id="drawingPad2" class="pad" width="200" height="200"></canvas></center>
-            		<a href="#" class="button" id="clear2">Clear</a>
-            		<a href="#" class="button" id="send2">Send</a>
-            		<a href="#" class="button" id="save2" download="drawing.png" target="_blank">Save</a>
+	        	<center><ul id="palette2">
+		                <li class="active" style="background:#000000"></li>
+		                <li style="background:#FF715B"></li>
+		                <li style="background:#D7263D"></li>
+		                <li style="background:#55D6BE"></li>
+		                <li style="background:#2F52E0"></li>
+		                <li style="background:#30C5FF"></li>
+	        	</ul></center>
+	        	<center><canvas id="drawingPad" class= "pad" width="200" height="200"></canvas></center>
+	        	<center><a href="#" class="button" id="clear2">Clear</a></center>
+	        	<center><a href="#" class="button" id="send2">Send</a></center>
+	        	<center><a href="#" class="button" id="save2" download="drawing.png" target="_blank">Save</a></center>
 			<form>
 				<br>
-				<div class= 'floatingtext'>
-					What does this picture represent: <br>
-					<center><input type="text" id="answer"  value=""><br></center>
+				<center><div class= 'floatingtext'>
+					<center>What does this picture represent:</center><br>
+					<center><input type="text" id="answer" value=""><br></center>
 					<a href="#" class = "button" id = "Submit" onclick="printvalue();">Submit</a>
-				</div>
-				</br></a>
-				<a href="#" class = "button" id = "readyBtn" onclick="readyBtn();">Ready</a>
+				</div></center>
+				</br>
+				<center><a href="#" class = "button" id = "readyBtn" onclick="readyBtn();">Ready</a></center>
 			</form>
 			<script src="inputAnswer.js"></script>
-    		</div>
+	        </div>
     	</div>
 </body>
     <script src="game.js"></script>
