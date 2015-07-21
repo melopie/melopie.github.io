@@ -102,11 +102,11 @@ startBtn.addEventListener("click", function (evt) {
 var clearBtn = document.getElementById("clear");
 clearBtn.addEventListener("click", function (evt) {
     console.log("clear button clicked");
-    //canvas.width = canvas.width; // this is all it takes to clear!
+    canvas.width = canvas.width; // this is all it takes to clear!
 
-    //// make sure the canvas' background is actually white for saving.
-    //ctx.fillStyle = "#FCF0AD";
-    //ctx.fillRect(0, 0, canvas.width, canvas.height);
+    // make sure the canvas' background is actually white for saving.
+    ctx.fillStyle = "#FCF0AD";
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
 });
 
 // when the save button is clicked
