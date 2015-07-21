@@ -65,7 +65,7 @@ clearBtn.addEventListener("click",function(evt) {
     canvas.width = canvas.width; // this is all it takes to clear!
 
     // make sure the canvas' background is actually white for saving.
-    context.fillStyle = "#ffffff";
+    context.fillStyle = "#fcf0ad";
     context.fillRect(0,0,canvas.width,canvas.height);
 });
 
@@ -88,7 +88,7 @@ saveBtn.addEventListener("click",function (evt) {
 
 //when the send button is clicked
 var sendBtn = document.getElementById("send");
-sendBtn.addEvenListener("click",function (evt) {
+sendBtn.addEventListener("click",function (evt) {
 	console.log("send clicked");
 });
 // SECOND DRAWING PAD
@@ -160,7 +160,7 @@ clearBtn2.addEventListener("click",function(evt) {
     canvas2.width = canvas2.width; // this is all it takes to clear!
 
     // make sure the canvas' background is actually white for saving.
-    context2.fillStyle = "#ffffff";
+    context2.fillStyle = "#fcf0ad";
     context2.fillRect(0,0,canvas2.width,canvas2.height);
 });
 
