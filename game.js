@@ -6,8 +6,8 @@ var mouseX = 0;
 var mouseY = 0;
 var dict = [];
 //var datadict = {};
-var turnVal;
-var twiceNum;
+//var turnVal;
+//var twiceNum;
 //name input
 
 /*function showInput(){
@@ -160,12 +160,12 @@ sendBtn.addEventListener("click", function (evt) {
         	console.log(roundNum);
     	}//end of for loop*/
     console.log("send button clicked");
-    var dataUri1 = canvas.toDataURL("image/jpeg");
+    /*var dataUri1 = canvas.toDataURL("image/jpeg");
     dict.push({
     	key: canvas,
   	value: datauri1
     });
-    return dataUri1;
+    return dataUri1;*/
     console.log("end of send");   
 	//console.log(dict);
 });
