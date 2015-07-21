@@ -9,6 +9,8 @@ body {
 }
 .buttony {
 	background-color: #30C5FF;
+	border-radius: 5px;
+	border: 0px;
 }
 .project-name {
 	font-family: "Amatic SC";
