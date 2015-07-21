@@ -1,6 +1,6 @@
 //var numPlayers = 2;
-var playerName;
-var roundNum;
+//var playerName;
+//var roundNum;
 var isMouseDown = false;
 var mouseX = 0;
 var mouseY = 0;
@@ -158,14 +158,14 @@ sendBtn.addEventListener("click", function (evt) {
 	 	roundNum = roundNum[k].value; 
         	console.log(roundNum);
     	}//end of for loop*/
-    	var dataUri1 = canvas.toDataURL("image/jpeg");
-    	this.setAttribute("href", dataUri1);
-    	dict.push({
-    		key: canvas,
-    		value: datauri1
-    	});
-    	return dataUri1;
-	console.log("end of send");   
+    console.log("send button clicked")
+    var dataUri1 = canvas.toDataURL("image/jpeg");
+    dict.push({
+    	key: canvas,
+  	value: datauri1
+    });
+    return dataUri1;
+    console.log("end of send");   
 	//console.log(dict);
 });
 
