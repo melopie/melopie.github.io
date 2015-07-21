@@ -11,6 +11,7 @@ body {
 	background-color: #30C5FF;
 	border-radius: 5px;
 	border: 1px solid #4C5B5C;
+	margin: 0px;
 }
 .project-name {
 	font-family: "Amatic SC";
