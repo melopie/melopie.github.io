@@ -98,6 +98,20 @@ a {
 	margin-top: 5px;
 	margin-bottom: 15px;
 }
+#nav a {
+	color: #4C5B5C;
+}
+#nav a:visited {
+	color: #5d6b6c;
+}
+#nav a:hover {
+	color: #c9cdce;
+	letter-spacing: 3px;
+	transition: 0.5s;
+}
+#nav a:active {
+	color: #f9f9f9;
+}
 
 /* GAME */
 #one {
