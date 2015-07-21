@@ -103,7 +103,7 @@ context2.strokeStyle = "#000000"; // drawing black lines.
 
 // make sure the canvas' background is actually white for saving.
 context2.fillStyle = "#fcf0ad";
-context2.fillRect(0,0,canvas.width,canvas.height);
+context2.fillRect(0,0,canvas2.width,canvas2.height);
 
 // when the user presses their mouse down on the canvas.
 canvas2.addEventListener("mousedown",function (evt) {
@@ -113,7 +113,7 @@ canvas2.addEventListener("mousedown",function (evt) {
     mouseY2 = evt.offsetY;
 
     context2.beginPath();
-    context2.moveTo(mouseX, mouseY);
+    context2.moveTo(mouseX2, mouseY2);
 });
 
 // when the user lifts their mouse up anywhere on the screen.
@@ -137,7 +137,7 @@ var palette2 = document.getElementById("palette2");
 var swatches2 = palette2.children;
 var currentSwatch2; // we'll keep track of what swatch is active in this.
 
-for (var j = 0; j < swatches.length; j++) {
+for (var j = 0; j < swatches2.length; j++) {
     var swatch2 = swatches2[j];
     if (j === 0) {
         currentSwatch2 = swatch2;
@@ -181,7 +181,7 @@ saveBtn2.addEventListener("click",function (evt) {
     // window.open(dataUri,"_blank");
 });
 
-var sendBtn = document.getElementById("send2");
+var sendBtn2 = document.getElementById("send2");
 sendBtn2.addeEventListener("click", function (evt) {
 	console.log("send2 clicked");
 });
