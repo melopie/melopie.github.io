@@ -7,7 +7,7 @@ var mouseY = 0;
 context.strokeStyle = "#000000"; // drawing black lines.
 
 // make sure the canvas' background is actually white for saving.
-context.fillStyle = "#ffffff";
+context.fillStyle = "#fcf0ad";
 context.fillRect(0,0,canvas.width,canvas.height);
 
 // when the user presses their mouse down on the canvas.
