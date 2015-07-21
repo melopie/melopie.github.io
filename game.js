@@ -1,10 +1,10 @@
 //var numPlayers = 2;
 //var playerName;
 //var roundNum;
-var isMouseDown = false;
-var mouseX = 0;
-var mouseY = 0;
-var dict = [];
+//var isMouseDown = false;
+//var mouseX = 0;
+//var mouseY = 0;
+//var dict = [];
 //var datadict = {};
 //var turnVal;
 //var twiceNum;
@@ -35,6 +35,8 @@ var canvas = document.getElementById("drawingPad");
 var ctx = canvas.getContext("2d");
 var isMouseDown = false;
 var mouseX = 0;
+var mouseY = 0;
+var dict = [];
 
 ctx.strokeStyle = "#000000"; // drawing black lines.
 
