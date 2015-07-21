@@ -80,6 +80,7 @@ a {
 .fname1 { /* form */
     background-color: #dbf0fa; /* color of the textbox */
     border-radius: 5px;
+    margin: 1.5px;
 }
 #player {
     margin-bottom: 20px;
