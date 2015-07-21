@@ -158,7 +158,7 @@ sendBtn.addEventListener("click", function (evt) {
 	 	roundNum = roundNum[k].value; 
         	console.log(roundNum);
     	}//end of for loop*/
-    console.log("send button clicked")
+    console.log("send button clicked");
     var dataUri1 = canvas.toDataURL("image/jpeg");
     dict.push({
     	key: canvas,
