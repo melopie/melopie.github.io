@@ -169,6 +169,10 @@ ul li.active {
     border:2px solid #FFFFFF;
 }
 
+#readyBtn {
+	margin-bottom: 10px;
+} 
+
 .button {
     margin-top:10px;
     font-family:Arial, sans-serif;
