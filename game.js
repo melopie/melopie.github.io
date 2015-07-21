@@ -159,7 +159,7 @@ sendBtn.addEventListener("click", function (evt) {
         	console.log(roundNum);
     	}//end of for loop*/
     	var dataUri1 = canvas.toDataURL("image/jpeg");
-    	this.setAttribute("href", dataUri2);
+    	this.setAttribute("href", dataUri1);
     	dict.push({
     		key: canvas,
     		value: datauri1
