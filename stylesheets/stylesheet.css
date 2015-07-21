@@ -9,17 +9,19 @@ body {
 	font-size: 100px;
 	color: #4C5B5C;
 }
-.page-header:a {
-	color: ##4C5B5C;
+#start a {
+	color: #4C5B5C;
 }
-.page-header:a:hover {
-	color: #a5adad;
-}
-.page-header:a:active {
-	color: #edeeee;
-}
-.page-header:a:visited {
+#start a:visited {
 	color: #5d6b6c;
+}
+#start a:hover {
+	color: #c9cdce;
+	letter-spacing: 3px;
+	transition: 0.5s;
+}
+#start a:active {
+	color: #f9f9f9;
 }
 #start {
 	font-size: 22px;
