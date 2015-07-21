@@ -169,8 +169,8 @@ sendBtn.addEventListener("click", function (evt) {
 	//console.log(dict);
 });
 
-var readyBtn = document.getElementById("Ready");
-readyBtn.addEventListener("click", function (evt) {
+var ReadyBtn = document.getElementById("Ready");
+ReadyBtn.addEventListener("click", function (evt) {
    console.log("ready button clicked");
 });
 
