@@ -9,6 +9,7 @@ body {
 }
 .floatingtext {
 	color: #55D6BE;
+	float: right;
 }
 .buttony {
 	background-color: #30C5FF;
