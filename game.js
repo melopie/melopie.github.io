@@ -101,6 +101,7 @@ startBtn.addEventListener("click", function (evt) {
 // when the clear button is clicked
 var clearBtn = document.getElementById("clear");
 clearBtn.addEventListener("click", function (evt) {
+    console.log("clear button clicked");
     canvas.width = canvas.width; // this is all it takes to clear!
 
     // make sure the canvas' background is actually white for saving.
@@ -169,8 +170,8 @@ sendBtn.addEventListener("click", function (evt) {
 	//console.log(dict);
 });
 
-var ReadyBtn = document.getElementById("Ready");
-ReadyBtn.addEventListener("click", function (evt) {
+var readyBtn = document.getElementById("ready");
+readyBtn.addEventListener("click", function (evt) {
    console.log("ready button clicked");
 });
 
@@ -258,6 +259,20 @@ clearBtn2.addEventListener("click", function (evt) {
 
 // when the save button is clicked
 var saveBtn2 = document.getElementById("save2");
+saveBtn2.addEventListener("click", function (evt) {
+    // we'll save using the new HTML5 download attribute to save the image. 
+    // we'll give the image a name of draw-[timestamp].jpg
+
+    var now2 = new Date().getTime(); // get today's date in milliseconds.
+    var dataUri2 = canvas2.toDataURL("image/jpeg"); // get the canvas data as a JPG.
+
+    // change the a href and download attributes so it'll save.
+    this.setAttribute("download", "drawing-" + now + ".jpg");
+    this.setAttribute("href", dataUri2);
+
+    // in older browsers you may need to substitute those last two lines of code with this:
+    // window.open(dataUri,"_blank");
+});
 
 //send function
 var sendBtn2 = function () {
@@ -273,18 +288,4 @@ sendBtn2.addEventListener("click", function (evt) {
 	//console.log(dict);
 });
 
-saveBtn2.addEventListener("click", function (evt) {
-    // we'll save using the new HTML5 download attribute to save the image. 
-    // we'll give the image a name of draw-[timestamp].jpg
-
-    var now2 = new Date().getTime(); // get today's date in milliseconds.
-    var dataUri2 = canvas2.toDataURL("image/jpeg"); // get the canvas data as a JPG.
-
-    // change the a href and download attributes so it'll save.
-    this.setAttribute("download", "drawing-" + now + ".jpg");
-    this.setAttribute("href", dataUri);
-
-    // in older browsers you may need to substitute those last two lines of code with this:
-    // window.open(dataUri,"_blank");
-});
 
