@@ -164,7 +164,7 @@ sendBtn.addEventListener("click", function (evt) {
     		key: canvas1,
     		value: datauri1
     	});
-	
+    	return dataUri1;
 	console.log("end of send");   
 	console.log(dict);
 });
@@ -257,20 +257,17 @@ var saveBtn2 = document.getElementById("save2");
 
 //send function
 var sendBtn2 = function () {
-    if (turn2 === 0) {
-        turn2++;
-        dict2.push({
-            player: drawing - now.jpg
-        });
-        // replace screen with pushed image, and add textbox
-
-        //next player would see text box and an empty post-it
-    } else {
-        turn2 = 0 + numPlayers;
-        //only works for first player
-        //must change to dict[player, numofPlayer]
-    }
-};
+sendBtn2.addEventListener("click", function (evt) {
+    var dataUri2 = canvas2.toDataURL("image/jpeg");
+    	this.setAttribute("href", dataUri2);
+    	dict.push({
+    		key: canvas2,
+    		value: datauri2
+    	});
+    	return dataUri2;
+	console.log("end of send");   
+	console.log(dict);
+});
 
 saveBtn2.addEventListener("click", function (evt) {
     // we'll save using the new HTML5 download attribute to save the image. 
