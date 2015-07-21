@@ -268,3 +268,18 @@ footer {
 #toolbartext {
 	margin-top: 50px;
 }
+
+/* Ham menu button */
+
+#showLeft {
+	background: none;
+	border: none;
+	max-width: 40px;
+	height: 40px;
+}
+#ham {
+	background: none;
+	border: none;
+	max-width: 100%;
+	height: auto;
+}
